@@ -1,0 +1,42 @@
+films=# select title, name
+films-# from films join actors_films on (films.films_id=actors_films.films_id)
+films-# join actors on (actors_films.actors_id=actors.actors_id);
+               title                |        name
+------------------------------------+--------------------
+ Iron man                           | Robert Downey Jr.
+ Iron man                           | Terrence Howard
+ Iron man                           | Gwyneth Paltrow
+ The Incredible Hulk                | Edward Norton
+ Iron Man 2                         | Jon Favreau
+ Iron Man 2                         | Gwyneth Paltrow
+ Iron Man 2                         | Scarlett Johansson
+ Iron Man 2                         | Robert Downey Jr.
+ Iron Man 2                         | Samuel L. Jackson
+ Iron Man 2                         | Mickey Rourke
+ Iron Man 2                         | Mickey Rourke
+ Iron Man 2                         | Don Cheadle
+ Thor: Love and Thunder             | Chris Hemsworth
+ Captain America: The First Avenger | Sebastian Stan
+ Captain America: The First Avenger | Chris Evans
+ The Avengers                       | Tom Hiddleston
+ The Avengers                       | Robert Downey Jr.
+ The Avengers                       | Scarlett Johansson
+ The Avengers                       | Samuel L. Jackson
+ The Avengers                       | Chris Hemsworth
+ The Avengers                       | Chris Evans
+ The Avengers                       | Jeremy Renner
+(22 rows)
+
+
+films=# select title, name
+films-# from films join directors_films on (films.films_id=directors_films.films_id)
+films-# join directors on (directors_films.directors_id=directors.directors_id);
+               title                |      name
+------------------------------------+-----------------
+ Iron man                           | Jon Favreau
+ Iron Man 2                         | Jon Favreau
+ The Incredible Hulk                | Louis Leterrier
+ Thor: Love and Thunder             | Taika Waititi
+ Captain America: The First Avenger | Joe Johnston
+ The Avengers                       | Joss Whedon
+(6 rows)
