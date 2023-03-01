@@ -1,0 +1,22 @@
+2023-02-27 22:09:04.903163 | Traceback (most recent call last):
+  File "D:\A-Level\OOP\lesson2\main.py", line 17, in <module>
+    main()
+  File "D:\A-Level\OOP\lesson2\main.py", line 9, in main
+    Haily = Employees.Recruiter('Haily', 25000, 'hailyyy5510k@gmail.com')
+  File "D:\A-Level\OOP\lesson2\Employees.py", line 12, in __init__
+    self.validate()
+  File "D:\A-Level\OOP\lesson2\Employees.py", line 22, in validate
+    raise MyExceptions.EmailAlreadyExistsException
+MyExceptions.EmailAlreadyExistsException
+
+2023-02-27 22:09:11.299068 | Traceback (most recent call last):
+  File "D:\A-Level\OOP\lesson2\main.py", line 17, in <module>
+    main()
+  File "D:\A-Level\OOP\lesson2\main.py", line 9, in main
+    Haily = Employees.Recruiter('Haily', 25000, 'hailyyy5510k@gmail.com')
+  File "D:\A-Level\OOP\lesson2\Employees.py", line 12, in __init__
+    self.validate()
+  File "D:\A-Level\OOP\lesson2\Employees.py", line 22, in validate
+    raise MyExceptions.EmailAlreadyExistsException
+MyExceptions.EmailAlreadyExistsException
+
